@@ -100,7 +100,11 @@ nav ul li a:hover::after {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/800') center/cover no-repeat;
+    background-image: url('./Image\ collée.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* assombrit l’image */
     color: white;
     text-align: center;
     display: flex;
@@ -108,6 +112,7 @@ nav ul li a:hover::after {
     justify-content: center;
     padding-top: 60px;
 }
+
 
 .hero h1 {
     font-size: 3.5rem;
@@ -192,11 +197,13 @@ nav ul li a:hover::after {
 
 .feature-img {
     height: 200px;
+    /* background-image: url('./cbc91446126963.5848874d58e5e.png'); */
     background-size: cover;
     background-position: center;
 }
 
 .feature-content {
+
     padding: 30px;
 }
 
@@ -212,7 +219,7 @@ nav ul li a:hover::after {
 }
 
 .stats-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     text-align: center;
